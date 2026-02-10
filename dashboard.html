@@ -5,14 +5,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome Trainer</h1>
+  <h1>Trainer Dashboard</h1>
 
   <div class="card">
     <h3>Client List</h3>
     <ul>
-      <li><a href="client.html">Rahul – Weight Loss</a></li>
-      <li><a href="client.html">Akhil – Muscle Gain</a></li>
+      <li onclick="loadClient('Rahul','Weight Loss')">Rahul – Weight Loss</li>
+      <li onclick="loadClient('Akhil','Muscle Gain')">Akhil – Muscle Gain</li>
     </ul>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
