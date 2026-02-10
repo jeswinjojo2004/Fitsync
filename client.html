@@ -4,21 +4,26 @@
   <title>Client Profile</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="showClient()">
+
   <h2>Client Profile</h2>
 
-  <p><b>Name:</b> Rahul</p>
-  <p><b>Goal:</b> Weight Loss</p>
+  <p><b>Name:</b> <span id="cname"></span></p>
+  <p><b>Goal:</b> <span id="cgoal"></span></p>
 
   <h3>Workout Plan</h3>
   <ul>
-    <li>Day 1 – Cardio</li>
-    <li>Day 2 – Chest</li>
-    <li>Day 3 – Legs</li>
+    <li>Day 1 – Cardio 
+      <button onclick="completeWorkout('Day 1')">Done</button>
+    </li>
+    <li>Day 2 – Chest 
+      <button onclick="completeWorkout('Day 2')">Done</button>
+    </li>
+    <li>Day 3 – Legs 
+      <button onclick="completeWorkout('Day 3')">Done</button>
+    </li>
   </ul>
 
-  <h3>Workout History</h3>
-  <p>Week 1 – Completed</p>
-  <p>Week 2 – Ongoing</p>
+  <script src="script.js"></script>
 </body>
 </html>
